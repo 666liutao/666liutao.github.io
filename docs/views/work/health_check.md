@@ -47,7 +47,8 @@ sidebar: 'auto'
 - [SpringBoot健康检查源码走读](https://blog.csdn.net/shengqianfeng/article/details/115112070)
 
 ### 实现代码
-
+```
+```
 ## 过程中遇到的问题
 - 配置文件自检时 所有项显示为 不能为空
 - FeignClient指定URL调用
