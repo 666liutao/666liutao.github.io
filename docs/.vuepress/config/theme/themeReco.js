@@ -15,13 +15,6 @@ module.exports = {
       text: '标签' // 默认 “标签”
     }
   },
-  vssueConfig: {
-      platform: 'github',
-      owner: 'liutao1996',
-      repo: 'liutao1996.github.io',
-      clientId: 'Ov23liG11NcHSiAZOq5R',
-      clientSecret: 'ed881aa2a8815b33b47a29d1db17cfac8fa6cb00',
-  },
   markdown: {
     lineNumbers: true, //代码显示行号
   },
