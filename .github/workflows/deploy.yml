@@ -22,7 +22,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
@@ -52,6 +51,7 @@ jobs:
       - name: Build static page
         run: yarn build
 
+      # 将生成的静态博客页面内容，推送道master分支
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
