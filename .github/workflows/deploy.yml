@@ -39,6 +39,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      # 避免出现HTTPS 证书验证失败
+      - name:
+        run: yarn config set "strict-ssl" false -g
+
       # 如果缓存没有命中，安装依赖，根据实际来改，也可以是npm，这里是用的yarn
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
