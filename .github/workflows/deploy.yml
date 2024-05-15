@@ -48,6 +48,10 @@ jobs:
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
 
+      # 开始生成静态博客页面
+      - name: Build static page
+        run: yarn build
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
