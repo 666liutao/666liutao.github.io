@@ -86,6 +86,10 @@ Error: Process completed with exit code 1.
         run: yarn config set "strict-ssl" false -g
 ```
 
+## 依赖问题
+
+- 如果package.json中依赖发生变化
+
 # 6. 扩展
 
 ## 6.1 增加评论功能
@@ -97,3 +101,5 @@ https://zhuanlan.zhihu.com/p/393344955
 https://zhuanlan.zhihu.com/p/647963756
 https://zhuanlan.zhihu.com/p/93030651
 https://blog.csdn.net/qq_43173415/article/details/117741139
+
+<Vssue/>
