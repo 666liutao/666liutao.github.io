@@ -1,9 +1,9 @@
 // delMarkdown.js
 const fs = require('fs')
-const findMarkdown = require('./findMarkdown')
+const findComponents = require('./findComponents')
 const rootDir = './docs'
 
-findMarkdown(rootDir, delComponents)
+findComponents(rootDir, delComponents)
 
 function delComponents(dir) {
     fs.readFile(dir, 'utf-8', (err, content) => {

@@ -1,7 +1,7 @@
 // findMarkdown.js
 const fs = require('fs')
 
-function findMarkdown(dir, callback) {
+function findComponents(dir, callback) {
     fs.readdir(dir, function (err, files) {
         if (err) throw err
 
@@ -12,7 +12,7 @@ function findMarkdown(dir, callback) {
                 fs.stat(innerDir, function (err, stat) {
 
                     if (stat.isDirectory()) {
-                        findMarkdown(innerDir, callback)
+                        findComponents(innerDir, callback)
                     } else {
                         // 跳过readme 文件，当然你也可以自行修改
                         if (/\.md$/.test(fileName) && !/README/.test(fileName))
@@ -25,4 +25,4 @@ function findMarkdown(dir, callback) {
     })
 }
 
-module.exports = findMarkdown
+module.exports = findComponents

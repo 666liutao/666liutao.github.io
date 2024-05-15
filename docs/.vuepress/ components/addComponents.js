@@ -1,9 +1,9 @@
 // addMarkdown.js
 const fs = require('fs')
-const findMarkdown = require('./findMarkdown')
+const findComponents = require('./findComponents')
 const rootDir = './docs'
 
-findMarkdown(rootDir, writeComponents)
+findComponents(rootDir, writeComponents)
 
 function writeComponents(dir) {
     if (!/README/.test(dir)) {
