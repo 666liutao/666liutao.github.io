@@ -14,6 +14,7 @@ sidebar: 'auto'
 * travis-ci足够自动化
 :::
 
+<Vssue/>
 
 # 创建github工程
 ### 创建一个 username.github.io  的仓库，username是你github的名称
@@ -122,3 +123,6 @@ yarn start
 
 - [拯救懒癌文档君 - VuePress + Travis CI + Github Pages 自动线上生成文档](https://juejin.im/post/6844903869558816781)
 - [GitHub Pages自定义域名](https://juejin.im/post/6844903558106578957)
+
+
+<Vssue/>
