@@ -16,7 +16,7 @@ module.exports = Object.assign({}, themeReco, {
             '@vssue/vuepress-plugin-vssue',
             {
                 // 设置 `platform` 而不是 `api`
-                platform: 'github',
+                platform: 'github-v4',// v3的platform是github，v4的是github-v4
                 // 其他的 Vssue 配置
                 owner: 'liutao1996',    // 仓库的拥有者名称
                 repo: 'liutao1996.github.io', // 存储评论的仓库名称

@@ -88,7 +88,20 @@ Error: Process completed with exit code 1.
 
 ## 依赖问题
 
-- 如果package.json中依赖发生变化
+- 如果package.json中依赖发生变化,需要将deploy.yml中使用缓存依赖的步骤去除，待执行一次后，再重新加上
+- 去除的步骤如下
+```
+      # 缓存 node_modules,如果package.json中依赖发生变化，建议将此步骤先移除，否则构建时不会刷新依赖
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+```
 
 # 6. 扩展
 
