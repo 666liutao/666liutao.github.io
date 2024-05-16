@@ -111,6 +111,9 @@ Error: Process completed with exit code 1.
 - 方法1: 使用gitalk
 - 方法2: 使用vssue
 
+## 6.2 seo的解决
+- https://zhuanlan.zhihu.com/p/678324158
+
 参考文章:
 https://zhuanlan.zhihu.com/p/58229299
 https://zhuanlan.zhihu.com/p/393344955

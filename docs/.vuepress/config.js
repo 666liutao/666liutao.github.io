@@ -44,18 +44,19 @@ module.exports = {
                 repo: 'liutao1996.github.io', // 存储评论的仓库名称
                 clientId: 'Ov23liG11NcHSiAZOq5R', // 刚保存下来的 Client ID
                 clientSecret: 'ed881aa2a8815b33b47a29d1db17cfac8fa6cb00', // 刚才保存下来的 Client secrets
+                autoCreateIssue: true // 自动创建 Issue
             }
         ],
 
-            //鼠标点击特效
-            [
+        //鼠标点击特效
+        [
             "cursor-effects",
-                {
-                    size: 2,                    // size of the particle, default: 2
-                    shape: ['circle'],  // shape of the particle, default: 'star'， 可选'circle'
-                    zIndex: 999999999           // z-index property of the canvas, default: 999999999
-                }
-            ],
+            {
+                size: 2,                    // size of the particle, default: 2
+                shape: ['circle'],  // shape of the particle, default: 'star'， 可选'circle'
+                zIndex: 999999999           // z-index property of the canvas, default: 999999999
+            }
+        ],
 
         // // 动态标题
         [
