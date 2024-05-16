@@ -108,8 +108,41 @@ Error: Process completed with exit code 1.
 
 ## 6.1 增加评论功能
 
-- 方法1: 使用gitalk
-- 方法2: 使用vssue
+### 方法1: 使用vssue
+
+- 在package.json中引入插件依赖
+```
+"@vssue/api-github-v4": "^1.4.7",
+"@vssue/vuepress-plugin-vssue": "^1.4.8",
+```
+- 在.vuepress/config.js中进行插件配置
+```
+module.exports = {
+    plugins: [
+        [
+            '@vssue/vuepress-plugin-vssue',
+            {
+                // 设置 `platform` 而不是 `api`
+                platform: 'github-v4',// v3的platform是github，v4的是github-v4
+                // 其他的 Vssue 配置
+                owner: 'liutao1996',    // 仓库的拥有者名称
+                repo: 'liutao1996.github.io', // 存储评论的仓库名称
+                clientId: 'Ov23liG11NcHSiAZOq5R', // 刚保存下来的 Client ID
+                clientSecret: 'xxxxxxxxxxxxxxxxxxxxx', // 刚才保存下来的 Client secrets
+                autoCreateIssue: true // 自动创建 Issue
+            }
+        ],
+   ]
+}
+```
+- clientId及clientSecret的生成：
+  - 点击头像 ---> Setting ---> Developer settings ---> OAuth Apps ---> New OAuth App 
+  - Homepage URL填写博客首页地址: https://liutao1996.github.io/
+  - Authorization callback URL填写博客首页地址: https://liutao1996.github.io/
+  - 提交
+
+### 方法2: 使用gitalk
+- https://zhuanlan.zhihu.com/p/93030651
 
 ## 6.2 seo的解决
 - https://zhuanlan.zhihu.com/p/678324158

@@ -44,7 +44,8 @@ module.exports = {
                 repo: 'liutao1996.github.io', // 存储评论的仓库名称
                 clientId: 'Ov23liG11NcHSiAZOq5R', // 刚保存下来的 Client ID
                 clientSecret: 'ed881aa2a8815b33b47a29d1db17cfac8fa6cb00', // 刚才保存下来的 Client secrets
-                autoCreateIssue: true // 自动创建 Issue
+                autoCreateIssue: true ,// 自动创建 Issue
+                proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
             }
         ],
 
