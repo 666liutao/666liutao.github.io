@@ -2,9 +2,10 @@
 title: VuePress + Travis CI + Github Pages搭建个人博客
 date: 2020-04-24
 tags:
- - 持续集成
+ - CICD
+ - 博客搭建
 categories:
- - 持续集成
+ - 生产实践
 sidebar: 'auto'
 ---
 

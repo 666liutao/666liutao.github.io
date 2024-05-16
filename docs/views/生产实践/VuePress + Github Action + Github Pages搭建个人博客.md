@@ -5,7 +5,7 @@ tags:
  - CICD
  - 博客搭建
 categories:
- - CICD
+ - 生产实践
 sidebar: 'auto'
 ---
 
