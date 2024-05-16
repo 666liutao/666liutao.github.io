@@ -108,6 +108,13 @@ Error: Process completed with exit code 1.
 
 ## 6.1 增加评论功能
 
+- 经尝试，在使用vssue时，是无法成功使用评论插件的，原因如下：
+ - github:
+   - 当使用github作为平台时，会出现跨域问题，可使用代理方式解决，由于vusse内置代理已不可用，需更换为自己的cros代理
+ - gitee:
+   - 使用gitee作为平台时，会出现无效的登录回调地址
+   - 原因:由于OAuth应用的回调地址，要和你发送请求的redirect_uri后面带的那一串地址要一样，动态的，且gitee并不打算解决此问题
+
 ### 方法1: 使用vssue
 
 - 在package.json中引入插件依赖
@@ -144,13 +151,14 @@ module.exports = {
   ```
    <Vssue/>
   ```
-- [官方文档](https://vssue.js.org/zh/guide/vuepress.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+- [vssue配置静态网站官方文档](https://vssue.js.org/zh/guide/vuepress.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 #### 该方法遇到的问题
 - https://github.com/meteorlxy/vssue/issues/131
 - 速率限制: https://docs.github.com/zh/graphql/overview/rate-limits-and-node-limits-for-the-graphql-api?apiVersion=2022-11-28
 - 目前使用过程中发现，在请求https://api.github.com/graphql时，出现403，原因是请求体中的X-Ratelimit-Limit=0，估计是vssue的问题                                                     
 - gitee:
   - gitee OAuth 授权请求请求范围无效、未知或格式不正确, 这种情况是授权范围不够，需要授权 user_info,issues,notes
+  
 ### 方法2: 使用gitalk
 - https://cloud.tencent.com/developer/article/1533079
 
@@ -158,10 +166,10 @@ module.exports = {
 - https://zhuanlan.zhihu.com/p/678324158
 
 参考文章:
-https://zhuanlan.zhihu.com/p/58229299
-https://zhuanlan.zhihu.com/p/393344955
-https://zhuanlan.zhihu.com/p/647963756
-https://zhuanlan.zhihu.com/p/93030651
-https://blog.csdn.net/qq_43173415/article/details/117741139
+- https://zhuanlan.zhihu.com/p/58229299
+- https://zhuanlan.zhihu.com/p/393344955
+- https://zhuanlan.zhihu.com/p/647963756
+- https://zhuanlan.zhihu.com/p/93030651
+- https://blog.csdn.net/qq_43173415/article/details/117741139
 
 <Vssue/>
