@@ -140,9 +140,16 @@ module.exports = {
   - Homepage URL填写博客首页地址: https://liutao1996.github.io/
   - Authorization callback URL填写博客首页地址: https://liutao1996.github.io/
   - 提交
+- 使用: 在需要开启评论的markdown文章末尾，加一行
+  ```
+   <Vssue/>
+  ```
+#### 该方法遇到的问题
+- https://github.com/meteorlxy/vssue/issues/131
+- 速率限制: https://docs.github.com/zh/graphql/overview/rate-limits-and-node-limits-for-the-graphql-api?apiVersion=2022-11-28
 
 ### 方法2: 使用gitalk
-- https://zhuanlan.zhihu.com/p/93030651
+- https://cloud.tencent.com/developer/article/1533079
 
 ## 6.2 seo的解决
 - https://zhuanlan.zhihu.com/p/678324158
