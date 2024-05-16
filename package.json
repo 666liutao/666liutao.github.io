@@ -18,6 +18,7 @@
     "@vuepress/plugin-pwa": "1.0.0-alpha.3",
     "@vssue/api-gitee-v5": "^1.4.7",
     "@vssue/api-github-v4": "^1.4.7",
+    "@vuepress/plugin-google-analytics": "^1.9.10",
     "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "vuepress": "1.0.3",
     "vuepress-plugin-flowchart": "^1.4.3",

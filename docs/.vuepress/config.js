@@ -48,6 +48,13 @@ module.exports = {
             }
         ],
 
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'G-H0Y59CN6R4'
+            }
+        ],
+
         //鼠标点击特效
         [
             "cursor-effects",
