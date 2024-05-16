@@ -54,7 +54,7 @@ sidebar: 'auto'
   - 权限勾选 repo 以及 workflows 即可
 
 
-### 4. 实际使用
+# 4. 实际使用
 
 - 本地IDEA拉取仓库代码，分支切换至 doc
 - 在 docs/views 目录 创建自己的第一篇博客文章(markdown格式)
@@ -63,7 +63,7 @@ sidebar: 'auto'
 
 # 5.问题
 
-## 如果出现构建失败
+## 5.1 如果出现构建失败
 - 查看构建失败的日志，位置：Actions, 点击最新的构建失败的工作流，点击Jobs-build, 即可查看构建过程中的日志
 - 举例，本博客在构建出现以下问题：
 ```
@@ -87,7 +87,7 @@ Error: Process completed with exit code 1.
         run: yarn config set "strict-ssl" false -g
 ```
 
-## 依赖问题
+## 5.2 依赖问题
 
 - 如果package.json中依赖发生变化,需要将deploy.yml中使用缓存依赖的步骤去除，待执行一次后，再重新加上
 - 去除的步骤如下
