@@ -144,11 +144,13 @@ module.exports = {
   ```
    <Vssue/>
   ```
+- [官方文档](https://vssue.js.org/zh/guide/vuepress.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 #### 该方法遇到的问题
 - https://github.com/meteorlxy/vssue/issues/131
 - 速率限制: https://docs.github.com/zh/graphql/overview/rate-limits-and-node-limits-for-the-graphql-api?apiVersion=2022-11-28
 - 目前使用过程中发现，在请求https://api.github.com/graphql时，出现403，原因是请求体中的X-Ratelimit-Limit=0，估计是vssue的问题                                                     
-
+- gitee:
+  - gitee OAuth 授权请求请求范围无效、未知或格式不正确, 这种情况是授权范围不够，需要授权 user_info,issues,notes
 ### 方法2: 使用gitalk
 - https://cloud.tencent.com/developer/article/1533079
 
