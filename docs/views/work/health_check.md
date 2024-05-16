@@ -2,7 +2,7 @@
 title: 服务自检功能
 date: 2021-04-16
 tags:
- - 持续集成
+ - 服务自检
 categories:
  - 工作
 sidebar: 'auto'
