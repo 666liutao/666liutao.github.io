@@ -45,7 +45,7 @@ module.exports = {
                 clientId: 'Ov23liG11NcHSiAZOq5R', // 刚保存下来的 Client ID
                 clientSecret: 'ed881aa2a8815b33b47a29d1db17cfac8fa6cb00', // 刚才保存下来的 Client secrets
             }
-        ]
+        ],
 
             //鼠标点击特效
             [
