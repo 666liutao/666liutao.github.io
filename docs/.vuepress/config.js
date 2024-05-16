@@ -40,8 +40,8 @@ module.exports = {
                 // 设置 `platform` 而不是 `api`
                 platform: 'gitee-v5',// v3的platform是github，v4的是github-v4
                 // 其他的 Vssue 配置
-                owner: 'liutao1996',    // 仓库的拥有者名称
-                repo: 'liutao_dream', // 存储评论的仓库名称
+                owner: 'liutao_dream',    // 仓库的拥有者名称
+                repo: 'liutao-blog', // 存储评论的仓库名称
                 clientId: 'd9275830d1a5a287c41319e5064a2aef075e8a45074b5c7b99b1260f32b01706', // 刚保存下来的 Client ID
                 clientSecret: 'b833731afe28a9cd4768818a25605315b2bddc6f09b42ba2ceb2a53caa24e198', // 刚才保存下来的 Client secrets
                 autoCreateIssue: true ,// 自动创建 Issue
