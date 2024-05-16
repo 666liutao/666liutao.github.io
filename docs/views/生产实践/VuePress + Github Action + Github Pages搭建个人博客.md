@@ -147,6 +147,7 @@ module.exports = {
 #### 该方法遇到的问题
 - https://github.com/meteorlxy/vssue/issues/131
 - 速率限制: https://docs.github.com/zh/graphql/overview/rate-limits-and-node-limits-for-the-graphql-api?apiVersion=2022-11-28
+- 目前使用过程中发现，在请求https://api.github.com/graphql时，出现403，原因是请求体中的X-Ratelimit-Limit=0，估计是vssue的问题                                                     
 
 ### 方法2: 使用gitalk
 - https://cloud.tencent.com/developer/article/1533079
