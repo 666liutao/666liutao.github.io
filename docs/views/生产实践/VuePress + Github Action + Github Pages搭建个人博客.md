@@ -47,7 +47,7 @@ sidebar: 'auto'
 - [配置文件样例](https://github.com/liutao1996/liutao1996.github.io/blob/doc/.github/workflows/deploy.yml)
 
 ### token配置
-- deploy.yml中存在一个${{ secrets.ACCESS_TOKEN }}变量，该变量是仓库访问的token，用于工作流向仓库推送代码，
+- deploy.yml中存在一个  secrets.ACCESS_TOKEN 变量，该变量是仓库访问的token，用于工作流向仓库推送代码，
 - 创建token具体操作如下:
   - 点击头像 ---> Setting ---> Developer settings ---> Personal access tokens ---> Generate new token(classic)
   - 创建的token名字要和deploy.yml中的变量保持一致，这里为ACCESS_TOKEN，有效期建议为永久(No expiration)
