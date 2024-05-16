@@ -38,7 +38,8 @@ module.exports = {
             '@vssue/vuepress-plugin-vssue',
             {
                 // 设置 `platform` 而不是 `api`
-                platform: 'gitee-v5',// v3的platform是github，v4的是github-v4
+                //platform: 'gitee-v5',// v3的platform是github，v4的是github-v4
+                baseUrl: 'https://gitee.com',
                 // 其他的 Vssue 配置
                 owner: 'liutao_dream',    // 仓库的拥有者名称
                 repo: 'liutao-blog', // 存储评论的仓库名称
