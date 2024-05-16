@@ -2,9 +2,10 @@
 title: VuePress + Github Action + Github Pages搭建个人博客
 date: 2024-04-24
 tags:
- - CI/CD
+ - CICD
+ - 博客搭建
 categories:
- - CI/CD
+ - CICD
 sidebar: 'auto'
 ---
 
@@ -107,6 +108,8 @@ Error: Process completed with exit code 1.
 
 ## 6.1 增加评论功能
 
+- 方法1: 使用gitalk
+- 方法2: 使用vssue
 
 参考文章:
 https://zhuanlan.zhihu.com/p/58229299
