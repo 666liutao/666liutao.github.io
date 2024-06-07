@@ -1,5 +1,5 @@
 ---
-title: Linux中挖矿病毒，CPU占用100%，top无法显示进程
+title: linux系统 使用ssh登录 耗时较久
 date: 2024-03-15
 tags:
  - ssh
