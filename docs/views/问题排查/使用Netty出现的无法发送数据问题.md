@@ -1,5 +1,5 @@
 ---
-title: Spring boot 实现jackson自定义字段过滤
+title: 使用Netty出现的无法发送数据问题
 date: 2023-05-09
 tags:
  - netty
@@ -62,7 +62,9 @@ public static void main(String[] args) {
 
 ## 2. 问题解决
 
-因为netty默认是讲byte数组解码编码成ByteBuf, 如果想传输不同类型的数据,需要在netty启动类里添加编码器。 或者用下面的方式：
+- 因为netty默认是将byte数组解码编码成ByteBuf
+- 由于上述代码并未自定义编解码器，且传输的数据类型是 String，故导致数据无法发送
+- 如果想传输不同类型的数据,需要在netty启动类里添加编码器。 或者用下面的方式：
 ```
 @Override
 public void channelActive(ChannelHandlerContext ctx) {
