@@ -1,6 +1,6 @@
 ---
 title: Spring boot 实现jackson自定义字段过滤
-date: 2024-06-07
+date: 2023-04-07
 tags:
  - jackson
 categories:
