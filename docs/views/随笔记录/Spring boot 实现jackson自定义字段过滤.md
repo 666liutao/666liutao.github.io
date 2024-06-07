@@ -1,6 +1,11 @@
-[toc]
-
-
+---
+title: VuePress + Github Action + Github Pages搭建个人博客
+date: 2024-04-24
+tags:
+ - jackson
+categories:
+ - 随笔记录
+sidebar: 'auto'
 ---
 
 # 1. 背景
