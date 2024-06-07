@@ -1,5 +1,5 @@
 ---
-title: @RefreshScope与Validator 问题
+title: 注解RefreshScope与Validator出现的问题
 date: 2021-04-16
 tags:
  - Validator
