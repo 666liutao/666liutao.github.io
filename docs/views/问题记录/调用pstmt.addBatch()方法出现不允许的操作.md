@@ -130,9 +130,3 @@ ps.close();
 ## 6. 参考文档
 
 - 关于Oracle批处理的参考文档: https://docs.oracle.com/cd/B28359_01/java.111/b31224/oraperf.htm
-
-https://www.cnblogs.com/jing-an-feng-shao/p/9201801.html
-
-
-
-
