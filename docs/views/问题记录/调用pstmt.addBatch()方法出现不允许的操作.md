@@ -4,7 +4,7 @@ date: 2021-06-27
 tags:
  - JDBC
 categories:
- - 随笔记录
+ - 问题记录
 sidebar: 'auto'
 ---
 
