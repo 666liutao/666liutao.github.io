@@ -1,6 +1,6 @@
 ---
 title: 调用pstmt.addBatch()方法出现不允许的操作
-date: 2021-06-27
+date: 2024-06-27
 tags:
  - JDBC
 categories:
