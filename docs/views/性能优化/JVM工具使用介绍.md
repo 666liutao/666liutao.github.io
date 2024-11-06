@@ -8,6 +8,8 @@ categories:
 sidebar: 'auto'
 ---
 
+jdk中自带一系列的监控工具，可以为我们的系统优化，问题排查提供很大的帮助。下面来介绍几个常用的工具。
+
 ## 1.  jmap (Java内存映像工具)
 
 - jmap(Memory Map for Java),Java内存映像工具，用于生成堆转储快照,一般称为heapdump或dump文件。
